@@ -8,6 +8,15 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>android.hardware.media.c2</name>
+        <version>1.0</version>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>default</instance>
+            <instance>software</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>android.hardware.gnss</name>
         <version>1.0</version>
         <interface>
@@ -77,7 +86,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>com.qualcomm.qti.uceservice</name>
-        <version>2.0-2</version>
+        <version>2.0-3</version>
         <interface>
             <name>IUceService</name>
             <instance>com.qualcomm.qti.uceservice</instance>
@@ -142,7 +151,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.data.factory</name>
-        <version>2.0-1</version>
+        <version>2.0-3</version>
         <interface>
             <name>IFactory</name>
             <instance>default</instance>
@@ -323,7 +332,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.ims</name>
-        <version>1.0-6</version>
+        <version>1.0-7</version>
         <interface>
             <name>IImsRadio</name>
             <instance>imsradio0</instance>
@@ -340,7 +349,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.lpa</name>
-        <version>1.0</version>
+        <version>1.2</version>
         <interface>
             <name>IUimLpa</name>
             <instance>UimLpa0</instance>
@@ -359,7 +368,7 @@
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <version>1.0</version>
-        <version>2.0-4</version>
+        <version>2.0-6</version>
         <interface>
             <name>IQtiRadio</name>
             <instance>slot1</instance>
@@ -463,8 +472,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.ims.factory</name>
-        <version>1.0</version>
-        <version>2.0</version>
+        <version>1.0-1</version>
         <interface>
             <name>IImsFactory</name>
             <instance>default</instance>

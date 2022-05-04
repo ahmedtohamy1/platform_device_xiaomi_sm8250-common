@@ -398,7 +398,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libavservices_minijail_vendor
+    libcodec2_hidl@1.0.vendor:32 \
+    libcodec2_vndk.vendor:32
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -551,14 +552,20 @@ PRODUCT_COPY_FILES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
     ims-ext-common \
     ims_ext_common.xml \
     qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
     qti-telephony-hidl-wrapper-prd \
+    qti_telephony_hidl_wrapper.xml \
     qti_telephony_hidl_wrapper_prd.xml \
     qti-telephony-utils \
+    qti-telephony-utils-prd \
     qti_telephony_utils.xml \
+    qti_telephony_utils_prd.xml \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
